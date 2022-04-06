@@ -39,16 +39,5 @@ namespace bote.modules
             await channel.DisconnectAsync();
 
         }
-
-        [Command("rojao", RunMode = RunMode.Async)]
-        public async Task rojao(IVoiceChannel channel = null) {
-            await JoinChannel(channel);
-
-            var mymusic = new SoundPlayer();
-            mymusic.SoundLocation = @"C:\Users\guste\Desktop\ConsoleApp1\rojao-estourado.wav";
-            mymusic.PlaySync();
-
-            await ReplyAsync("TARRARRRRRRRRRRRRRSTASATAATTATATATATTAAPOW POW OPWPWPOPWWWPOWWWWWWWWWWW");
-        }
     }
 }

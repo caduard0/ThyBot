@@ -1,1 +1,2 @@
 # MyBot
+The ultimate bot
